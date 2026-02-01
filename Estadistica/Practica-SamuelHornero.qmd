@@ -104,7 +104,6 @@ Hay muchos NAs, vamos a intentar crear un modelo que nos prediga cuantos son los
 6.  Pinta el histograma de los metros cuadrados y ver si tenemos que filtrar algún elemento más
 
     ```{r}
-    library(ggplot2)
 
     df_plot <- df_madrid %>%
       filter(!is.na(Square.Meters)) %>%
@@ -147,7 +146,6 @@ Hay muchos NAs, vamos a intentar crear un modelo que nos prediga cuantos son los
 8.  Existen varios Barrios que todas sus entradas de Square.Meters son NA, vamos a eliminar del dataset todos los pisos que pertenecen a estos barrios.
 
     ```{r}
-    library(dplyr)
 
     barrios_todos_na <- unique(
       df_madrid$Neighbourhood[
