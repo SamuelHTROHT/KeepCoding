@@ -17,6 +17,8 @@ options(repr.plot.height=4,repr.plot.width=6,repr.plot.res = 300)
 1.  Vamos a quedarnos con las columnas de mayor interés: 'City','Room.Type','Neighbourhood','Accommodates','Bathrooms','Bedrooms','Beds','Price','Square.Feet','Guests.Included','Extra.People','Review.Scores.Rating','Latitude', 'Longitude' Nos quedarmos solo con las entradas de Madrid para Room.Type=="Entire home/apt" y cuyo barrio (Neighbourhood) no está vacio '' Podemos eliminar las siguientes columnas que ya no son necesarias: "Room.Type",'City' Llama a nuevo dataframe df_madrid.
 
     ```{r}
+    library(dplyr)
+    library(ggplot2)
     df_madrid <- airbnb[, c(
       "City",
       "Room.Type",
