@@ -1,0 +1,23 @@
+artifact_path: file:c:/Users/Samuel/programador/keepcoding/Mi Repositorio/KeepCoding/Despliegue
+  de Algoritmos/mlruns/1/models/m-a96b22ee06e04a91a77c37ccb9dd2632/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.13.12
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.3.0
+mlflow_version: 3.14.0
+model_id: m-a96b22ee06e04a91a77c37ccb9dd2632
+model_size_bytes: 103006
+model_uuid: m-a96b22ee06e04a91a77c37ccb9dd2632
+prompts: null
+run_id: ed461eaf632344e998d0dd949379f5b5
+utc_time_created: '2026-07-19 17:25:03.020965'

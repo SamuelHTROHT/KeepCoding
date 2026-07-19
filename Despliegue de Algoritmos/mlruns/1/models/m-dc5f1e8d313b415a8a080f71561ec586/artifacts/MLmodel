@@ -1,0 +1,24 @@
+artifact_path: file:c:/Users/Samuel/programador/keepcoding/Mi Repositorio/KeepCoding/Despliegue
+  de Algoritmos/mlruns/1/models/m-dc5f1e8d313b415a8a080f71561ec586/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.13.12
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+mlflow_version: 3.14.0
+model_id: m-dc5f1e8d313b415a8a080f71561ec586
+model_size_bytes: 1937132
+model_uuid: m-dc5f1e8d313b415a8a080f71561ec586
+prompts: null
+run_id: 80d8c4d72a7d4aafb3f056814ca0c7ca
+utc_time_created: '2026-07-19 17:27:23.845305'
